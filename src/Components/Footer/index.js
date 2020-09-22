@@ -6,7 +6,7 @@ import EmailIcon from '@material-ui/icons/Email';
 export default class Footer extends Component{
     render(){
         return (
-            <div className="footer__container">
+            <div className="footer__container" id="contact">
                 <h1 className="footer__contactTitle">CONTACT AND ORDER NOW</h1>
                 <div className="footer__contactDetails">
                     <div className="contactDetails">

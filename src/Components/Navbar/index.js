@@ -14,7 +14,7 @@ export default class Navbar extends Component{
                     <h1 className="app__title">Lad Printers</h1>
                 </div>
                 <div className="app__navbar">
-                    <a href="/html/">Contact </a>
+                    <a href="#contact" class="app__contact_btn">Contact</a>
                 </div>
             </div>
         )
