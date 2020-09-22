@@ -1,0 +1,51 @@
+.app__header{
+    /* border-bottom : 1px solid rgb(79, 78, 78); */
+    /* width: 100%; */
+    background: #F7F7F7;
+    /* background:linear-gradient(45deg, #b6b6b6 30%, #575757 90%); */
+    margin: 0 10px 15px 10px;
+    padding-top:10px;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__logo {
+    object-fit: contain;
+    width: 3em;
+    height: 8vh;
+    margin: 8px;
+    /* border: 1px solid black; */
+    
+}
+
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.app__title {
+    object-fit: contain;
+    font: x-large;
+    /* font-style: italic; */
+    font-weight: normal;
+    font-size: 2em;
+    padding-top: 10px;
+}
+
+.app__logoAndName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.app__navbar {
+    /* border: 1px solid black; */
+    color: rgb(0, 0, 0);
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+}

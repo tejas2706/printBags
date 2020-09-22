@@ -1,0 +1,36 @@
+.clientsDisplay__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: 10px 0;
+}
+
+.clients__images::-webkit-scrollbar {
+    display: none;
+}
+
+.clients__images {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.images {
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 10px;
+}
+
+.line{
+    margin:5px;
+    border-top: 1px solid rgb(88, 88, 88);
+    width: 80%;
+}
+
+.clients__title {
+    font-size: 4vmin;
+}

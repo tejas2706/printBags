@@ -1,0 +1,41 @@
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    height:20%;
+    background: rgb(0, 0, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color:rgb(212, 201, 201);
+    margin: 20px;
+
+}
+
+.footer__contactDetails {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid white; */
+    padding: 2%;
+    padding-left: 5%;
+
+}
+
+.contactDetails{
+    /* border: 1px solid white; */
+    color: rgb(255, 255, 255);
+}
+
+.details {
+    font-size: 4vmin;
+    color:rgb(229, 226, 226)
+}
+
+.contact {
+    font-size: 3vmin;
+    color:rgb(172, 170, 170)
+}
+
+.footer__contactTitle {
+    margin:10px;
+    font-size: 4vmin;
+    align-self: center;
+}

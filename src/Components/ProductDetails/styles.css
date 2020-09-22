@@ -1,0 +1,38 @@
+.samples {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    height:100%;
+    overflow-x: scroll;
+    justify-content: center; 
+    /* flex: 2; */
+}
+
+.samples::-webkit-scrollbar {
+    display: none;
+}
+
+.modal__container {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    /* border: 1px solid black; */
+}
+
+.sample_image {
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+    border: 1px solid rgba(155, 153, 153, 0.6);
+    border-radius: 10px;
+}
+
+.more_details {
+    display: flex;
+    flex-direction: column;
+    /* height: 10%; */
+    /* overflow-y: scroll; */
+    border: 1px solid black;
+    padding: 5px;
+}
