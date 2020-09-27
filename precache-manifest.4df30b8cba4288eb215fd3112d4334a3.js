@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed4cb79bd726ebdab6390d838cd4d8e8",
+    "revision": "753d45507a8947a1802bc8912ffcefca",
     "url": "/printBags/index.html"
   },
   {
-    "revision": "a981a7792cdbe6295577",
-    "url": "/printBags/static/css/main.c25a1e0a.chunk.css"
+    "revision": "615f8c71db1aaf0b2dea",
+    "url": "/printBags/static/css/main.e6e08110.chunk.css"
   },
   {
-    "revision": "828d9dc73102ff29491c",
-    "url": "/printBags/static/js/2.2c6c8fee.chunk.js"
+    "revision": "568df08c5ec1b3a78632",
+    "url": "/printBags/static/js/2.ce26898c.chunk.js"
   },
   {
-    "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/printBags/static/js/2.2c6c8fee.chunk.js.LICENSE.txt"
+    "revision": "3ceb8c17f560e6682fd3523301e674b3",
+    "url": "/printBags/static/js/2.ce26898c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a981a7792cdbe6295577",
-    "url": "/printBags/static/js/main.7426c11f.chunk.js"
+    "revision": "615f8c71db1aaf0b2dea",
+    "url": "/printBags/static/js/main.48d871be.chunk.js"
   },
   {
     "revision": "a76dca05b437bcbfd773",
