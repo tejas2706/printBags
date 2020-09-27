@@ -1,21 +1,28 @@
 import React, { Component } from 'react';
 import './styles.css'
+import AccessTimeIcon from '@material-ui/icons/AccessTime';
+import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
+import cloth from './images/cloth.jpg'
 
 export default class ClientDisplay extends Component {
     render(){
         return(
-            <div className="clientsDisplay__container">
+            <div className="info__container">
                 <div className="line"></div>
-                <h1 className="clients__title">Our Clients</h1>
-                <div className="clients__images">
-                    <img className="images" src="https://previews.123rf.com/images/diikast/diikast1903/diikast190300079/119817430-logo-design-concept-with-trolley-symbols-and-shopping-items-this-logo-is-suitable-for-supermarket-ma.jpg" alt="img1"></img>
-                    <img className="images" src="https://previews.123rf.com/images/diikast/diikast1903/diikast190300079/119817430-logo-design-concept-with-trolley-symbols-and-shopping-items-this-logo-is-suitable-for-supermarket-ma.jpg" alt="img1"></img>
-                    <img className="images" src="https://previews.123rf.com/images/diikast/diikast1903/diikast190300079/119817430-logo-design-concept-with-trolley-symbols-and-shopping-items-this-logo-is-suitable-for-supermarket-ma.jpg" alt="img1"></img>
-                    <img className="images" src="https://previews.123rf.com/images/diikast/diikast1903/diikast190300079/119817430-logo-design-concept-with-trolley-symbols-and-shopping-items-this-logo-is-suitable-for-supermarket-ma.jpg" alt="img1"></img>
-                    <img className="images" src="https://previews.123rf.com/images/diikast/diikast1903/diikast190300079/119817430-logo-design-concept-with-trolley-symbols-and-shopping-items-this-logo-is-suitable-for-supermarket-ma.jpg" alt="img1"></img>
-                    <img className="images" src="https://previews.123rf.com/images/diikast/diikast1903/diikast190300079/119817430-logo-design-concept-with-trolley-symbols-and-shopping-items-this-logo-is-suitable-for-supermarket-ma.jpg" alt="img1"></img>
-                    <img className="images" src="https://previews.123rf.com/images/diikast/diikast1903/diikast190300079/119817430-logo-design-concept-with-trolley-symbols-and-shopping-items-this-logo-is-suitable-for-supermarket-ma.jpg" alt="img1"></img>
-                    <img className="images" src="https://previews.123rf.com/images/diikast/diikast1903/diikast190300079/119817430-logo-design-concept-with-trolley-symbols-and-shopping-items-this-logo-is-suitable-for-supermarket-ma.jpg" alt="img1"></img>
+                <h1 className="info__title">Bags Available For</h1>
+                <div className="info__images">
+                    <div className="info__box">
+                        <AccessTimeIcon ></AccessTimeIcon>
+                        <h3>Clocks shop</h3>
+                    </div>
+                    <div className="info__box">
+                        <PhoneAndroidIcon className="icons"></PhoneAndroidIcon>
+                        <h3>Mobile shop</h3>
+                    </div>
+                    <div className="info__box">
+                        <img className="image" src={cloth} alt="cloth"></img>
+                        <h3>Cloth shops</h3>
+                    </div>
                 </div>
             </div>
         )

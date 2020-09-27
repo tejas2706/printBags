@@ -6,59 +6,15 @@ import Banners from '../../Components/Banners';
 import ProductDetails from '../../Components/ProductDetails';
 import Footer from '../../Components/Footer';
 import ClientDisplay from '../../Components/ClientsDisplay';
+import Cities from '../../Components/Cities';
+import { db } from '../../firebase';
 
 export default class Home extends Component {
 
     constructor() {
         super();
         this.state = {
-            "types":[
-                {
-                    "prodId":1,
-                    "prod_name":"Non Woven 1",
-                    "url":"https://www.pngitem.com/pimgs/m/262-2624859_shopping-bag-png-shopping-bag-logo-png-transparent.png",
-                    "size":"12 x 13",
-                    "price": "",
-                    "minQty": "",
-                    "isAvailable":true
-                },
-                {
-                    "prodId":2,
-                    "prod_name":"Non Woven 2",
-                    "url":"https://www.pngitem.com/pimgs/m/262-2624859_shopping-bag-png-shopping-bag-logo-png-transparent.png",
-                    "size":"12 x 13",
-                    "price": "Rs. 14/pc",
-                    "minQty": "1000",
-                    "isAvailable":false
-                },
-                {
-                    "prodId":3,
-                    "prod_name":"Non Woven 3",
-                    "url":"https://www.pngitem.com/pimgs/m/262-2624859_shopping-bag-png-shopping-bag-logo-png-transparent.png",
-                    "size":"12 x 13",
-                    "price": "Rs. 16/pc",
-                    "minQty": "1000",
-                    "isAvailable":true
-                },
-                {
-                    "prodId":4,
-                    "prod_name":"Non Wovenn 4",
-                    "url":"https://www.pngitem.com/pimgs/m/262-2624859_shopping-bag-png-shopping-bag-logo-png-transparent.png",
-                    "size":"12 x 13",
-                    "price": "Rs. 14/pc",
-                    "minQty": "100",
-                    "isAvailable":true
-                },
-                {
-                    "prodId":5,
-                    "prod_name":"Non Woven 5",
-                    "url":"https://www.pngitem.com/pimgs/m/262-2624859_shopping-bag-png-shopping-bag-logo-png-transparent.png",
-                    "size":"12 x 15",
-                    "price": "Rs. 14/pc",
-                    "minQty": "1000",
-                    "isAvailable":true
-                }
-            ],
+            "types":[],
             "designs":[
                 {
                     "designId":1,
@@ -97,6 +53,20 @@ export default class Home extends Component {
         this.setState({"modalForProdDetails": true, "modalData":modalData});
     }
 
+    componentDidMount(){
+        console.log("Component did mount");
+        db.child('types').on('value',snapshot=>{
+            if(snapshot.val()){
+                console.log("Home -> componentDidMount -> snapshot.val()", snapshot.val())
+                this.setState({"types":snapshot.val()})
+            }
+        })
+    }
+
+    componentDidUpdate(){
+        console.log("Component did update");
+    }
+
     render() {
 
 
@@ -130,11 +100,13 @@ export default class Home extends Component {
                             <div className="tab-pane fade active show" id="explore-styles" role="tabpanel" aria-labelledby="home-tab-ex">
                                 <div className="home_products">
                                     {
+                                        this.state.types ?
                                         this.state.types.map((each)=> {
                                             return(
                                                 <Product key={each.prodId} data={each} onClick={()=> this.openProductDetails(each)}></Product>
                                             )
                                         })
+                                        :null
                                     }
                                 </div>
                             </div>
@@ -151,7 +123,8 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
-                <ClientDisplay></ClientDisplay>
+                {/* <ClientDisplay></ClientDisplay> */}
+                <Cities></Cities>
                 <Footer></Footer>
                 </div>
         )
