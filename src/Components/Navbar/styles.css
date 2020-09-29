@@ -21,11 +21,6 @@
     
 }
 
-@keyframes rotate {
-    to {
-      transform: rotate(360deg);
-    }
-}
 
 .app__title {
     object-fit: contain;
@@ -53,4 +48,13 @@
 .app__contact_btn {
     color: rgb(17, 17, 17);
     font-weight: bold;
+    /* background: green; */
+    transition: background 0.5s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.app__contact_btn:hover{
+    background: rgb(104, 104, 104);
+    color: white;
 }

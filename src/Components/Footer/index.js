@@ -14,7 +14,7 @@ export default class Footer extends Component{
                         <h4 className="contact">4, Bhagirath Complex, Icchadevi Chowk</h4>
                         <h4 className="contact">Ganpati Nagar, Jalgaon</h4>
                         <h4 className="contact">Pincode: 425001</h4>
-                        <h4 className="contact"><PhoneInTalkIcon ></PhoneInTalkIcon> 9325671641</h4>
+                        <h4 className="contact"><PhoneInTalkIcon ></PhoneInTalkIcon>+91 - 9325671641</h4>
                         <h4 className="contact"><EmailIcon ></EmailIcon> kishorlad763@gmail.com</h4>
                     </div>
                 </div>
